@@ -1,0 +1,220 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900);
+
+header,
+footer {
+	background-color: #2c3e50;
+}
+
+header .layout-logo {
+	width: 140px;
+	color: #27ae60;
+	font: bold 25px 'Roboto', sans-serif;
+	font-weight: 900;
+	text-transform: uppercase;
+	background-color: #fff;
+	text-align: center;
+	padding: 7px 0 8px 0;
+}
+
+header nav ul {
+	text-align: center;
+	padding: 13px 0 13px 0;
+}
+
+header nav.navpannel li {
+	display: inline-block;
+	margin-right: 40px;
+}
+
+header nav.navpannel li a {
+	text-decoration: none;
+	color: #fff;
+	font: 15px 'Roboto', sans-serif;
+}
+
+header nav.navpannel ul :last-child {
+	margin-right: 0px;
+}
+
+header button {
+	color: #fff;
+	font: 15px 'Roboto', sans-serif;
+	text-transform: uppercase;
+	padding: 10px 20px 10px 20px;
+	margin-top: 4px;
+	border-style: none;
+	border-radius: 3px;
+    background: -webkit-linear-gradient(rgba(39,174,96,1) 20%, rgba(11, 37, 7, 0.88) 180%)
+    background: -o-linear-gradient(rgba(39,174,96,1) 20%, rgba(11, 37, 7, 0.88) 180%);
+    background: linear-gradient(rgba(39,174,96,1) 20%, rgba(11, 37, 7, 0.88) 180%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#27ae60', endColorstr='#1a000000',GradientType=0 );
+} 
+
+header .motivate {
+	position: absolute;
+	z-index: 100;
+	top: 150px;
+	left: 755px;
+	width: 340px;
+	text-align: center;
+}
+
+header .motivate h1 {
+	color: #555555;
+	font: 55px 'Roboto', sans-serif;
+	font-weight: 100;
+}
+
+header .motivate button {
+	margin-top: 40px;
+}
+
+.carousel-indicators li {
+	border-style: none;
+	background-color: rgba(44, 62, 80, 0.5);
+	width: 15px;
+	height: 15px;
+}
+
+.carousel-indicators .active {
+	width: 17px;
+	height: 17px;
+	background-color: #2c3e50;
+}
+
+.carousel-control:hover {
+	opacity: 1;
+}
+
+.carousel-control.left,
+.carousel-control.right {
+	background-image: none;
+	color: #2c3e50;
+	text-shadow: none;
+	opacity: 1;
+}
+
+main section.user-info {
+	padding: 45px 0 80px 0;
+}
+
+main section.user-info h2 {
+	font: 35px 'Roboto', sans-serif;
+	font-weight: 300;
+	color: #2c3e50;
+	margin-bottom: 40px;
+}
+
+main section.user-info p {
+	font: 15px 'Roboto', sans-serif;
+	font-weight: 300;
+	color: #444444;
+	line-height: 25px;
+}
+
+main section.user-info figcaption {
+	font: 11px 'Roboto', sans-serif;
+	font-weight: 300;
+	color: #2c3e50;
+	margin-bottom: 10px;
+}
+
+
+main section.register {
+	background: url(../img/register-bg.jpg) no-repeat;
+	background-size: cover;
+	padding: 80px 0;
+}
+
+main section.register .form-wrapper {
+	padding: 0 55px 0 55px;
+}
+
+main section form {
+	background-color: #fff;
+	padding: 30px 80px 100px 80px;
+}
+
+main section.register h3 {
+	font: 35px 'Roboto', sans-serif;
+	font-weight: 100;
+	color: #555555;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+main section.register .form-control {
+	height: 50px;
+  	border-radius: 1px;
+  	background-color: #f5f5f5;
+  	border-left-style: none;
+  	border-right-style: none;
+  	border-bottom-style: none;
+  	-webkit-box-shadow: inset 0px 1px 1px 0px rgba(0,0,0,0.2);
+	   -moz-box-shadow: inset 0px 1px 1px 0px rgba(0,0,0,0.2);
+		  	box-shadow: inset 0px 1px 1px 0px rgba(0,0,0,0.2);
+}
+
+main section.register .form-group {
+	margin-bottom: 10px;
+}
+
+main section.register form :last-child {
+	margin-bottom: 0px;
+}
+
+main section.register select,
+main section.register input,
+main section.register option[value] {
+	color: #989898;
+	font: 20px 'Roboto', sans-serif;
+	font-weight: 300;
+}
+
+footer .row {
+	color: #fff;
+	font: 15px 'Roboto'. sans-serif;
+	font-weight: 300;
+	text-align: center;
+	padding: 15px 0 15px 0;
+}
+
+
+@media all and (transform-3d), (-webkit-transform-3d) {
+	.carousel-control .glyphicon-menu-left {
+		left: 50%;
+    	margin-left: -10px;
+	}
+
+	.carousel-control .glyphicon-menu-right {
+		right: 50%;
+  		margin-right: -10px;
+	}
+
+	.carousel-control .glyphicon-menu-left,
+	.carousel-control .glyphicon-menu-right {
+  		position: absolute;
+  		top: 50%;
+  		z-index: 5;
+  		display: inline-block;
+  		margin-top: -10px;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.carousel-control .glyphicon-menu-left,
+  	.carousel-control .glyphicon-menu-right {
+		width: 30px;
+    	height: 30px;
+    	margin-top: -10px;
+    	font-size: 30px;
+  	}
+
+	.carousel-control .glyphicon-menu-left {
+		margin-left: -10px;	
+	}
+
+	.carousel-control .glyphicon-menu-right {
+		margin-right: -10px;
+	}
+}
